@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Memória Matemático</title>
+    <link rel="stylesheet" href="trabalho.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Memória Matemático</h1>
+        <div id="setup">
+            <label for="player1">Nome da Equipe 1: </label>
+            <input type="text" id="player1" placeholder="Equipe 1">
+            <label for="player2">Nome da Equipe 2: </label>
+            <input type="text" id="player2" placeholder="Equipe 2">
+            <label for="difficulty">Escolha a Dificuldade: </label>
+            <select id="difficulty">
+                <option value="1">Fácil</option>
+                <option value="2">Médio</option>
+                <option value="3">Difícil</option>
+                <option value="4">Muito Difícil</option>
+                <option value="5">Extremo</option>
+            </select>
+            <button id="startGame">Iniciar Jogo</button>
+        </div>
+        <div id="game" class="hidden">
+            <div id="scoreboard">
+                <div id="team1"></div>
+                <div id="team2"></div>
+            </div>
+            <div id="message"></div>
+            <div id="board"></div>
+        </div>
+        <div id="winnerScreen" class="hidden">
+            <h2 id="winnerMessage"></h2>
+            <button id="restartGame">Jogar Novamente</button>
+        </div>
+    </div>
+    <script src="trabalho.js"></script>
+</body>
+</html>
